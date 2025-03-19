@@ -34,22 +34,22 @@ However, this method still has limitations when handling very large datasets, an
 
 To overcome the limitations mentioned above, I adopted a more system-adaptive solution:
 
-**Configuration-Based Processing:** The solution dynamically adjusts based on available system resources (memory, CPU), ensuring optimal performance without overwhelming the system.
-**Spark for Distributed Processing:** PySpark was used for distributed data processing with memory optimization and parallelism.
-**Dask for Larger-than-Memory Handling:** Dask was used to handle data that couldn't fit into memory, dividing the dataset into partitions for parallel computation.
-**DuckDB for Fast Querying:** DuckDB was used to load Parquet files into a fast in-memory SQL engine, enabling complex queries and analysis on the data.
+#### Configuration-Based Processing: The solution dynamically adjusts based on available system resources (memory, CPU), ensuring optimal performance without overwhelming the system.
+#### Spark for Distributed Processing: PySpark was used for distributed data processing with memory optimization and parallelism.
+#### Dask for Larger-than-Memory Handling: Dask was used to handle data that couldn't fit into memory, dividing the dataset into partitions for parallel computation.
+#### DuckDB for Fast Querying: DuckDB was used to load Parquet files into a fast in-memory SQL engine, enabling complex queries and analysis on the data.
 Steps Taken
 
-## 1. Data Loading**
+## 1. Data Loading
 Loaded the census tract and county data using both PySpark and Dask.
 Data was cleaned (null handling, type casting) and transformed.
-## 2. Data Storage**
+## 2. Data Storage
 Cleaned data was saved in Parquet format to improve storage efficiency and facilitate fast querying.
 Parquet files were then loaded into DuckDB for SQL-based analysis.
-## 3. Data Analysis**
+## 3. Data Analysis
 Ran various SQL queries on DuckDB to analyze the total population by state, basic statistics on county population, and more.
 Joined tract and county data for deeper insights, including population density analysis.
-## 4. Optimization**
+## 4. Optimization
 The system was configured with memory limits and optimized for parallel processing to handle large datasets effectively without relying on cloud services.
 Project Structure
 

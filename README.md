@@ -81,6 +81,13 @@ To run the project, simply execute the main script:
 ```bash
 python process_census_data.py
 ```
+
+For Mac OS:
+
+```bash
+python3 process_census_data.py
+```
+
 This will:
 Load the data.
 Clean and preprocess the datasets.

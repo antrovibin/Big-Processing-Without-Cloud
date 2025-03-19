@@ -53,30 +53,30 @@ Joined tract and county data for deeper insights, including population density a
 The system was configured with memory limits and optimized for parallel processing to handle large datasets effectively without relying on cloud services.
 Project Structure
 
-'''bash
+```bash
 /big-data-processing-without-cloud
 |-- /Dataset                    # Raw dataset files (CSV format)
 |-- /Output                     # Processed data files (Parquet format)
 |-- /Code                       # Python scripts for processing and analysis
 |-- README.md                   # Project documentation
 |-- requirements.txt            # Required Python libraries
-'''
+```
 ### Installation
 
 Clone the repository:
-'''bash
+```bash
 git clone https://github.com/antrovibin/big-data-processing-without-cloud.git
 cd big-data-processing-without-cloud
-'''
+```bash
 
 Ensure that you have the necessary data files in the /Dataset directory.
 
 ### Usage
 
 To run the project, simply execute the main script:
-'''bash
+```bash
 python process_census_data.py
-'''
+```
 This will:
 Load the data.
 Clean and preprocess the datasets.

@@ -34,10 +34,14 @@ However, this method still has limitations when handling very large datasets, an
 
 To overcome the limitations mentioned above, I adopted a more system-adaptive solution:
 
-#### Configuration-Based Processing: The solution dynamically adjusts based on available system resources (memory, CPU), ensuring optimal performance without overwhelming the system.
-#### Spark for Distributed Processing: PySpark was used for distributed data processing with memory optimization and parallelism.
-#### Dask for Larger-than-Memory Handling: Dask was used to handle data that couldn't fit into memory, dividing the dataset into partitions for parallel computation.
-#### DuckDB for Fast Querying: DuckDB was used to load Parquet files into a fast in-memory SQL engine, enabling complex queries and analysis on the data.
+#### Configuration-Based Processing: 
+The solution dynamically adjusts based on available system resources (memory, CPU), ensuring optimal performance without overwhelming the system.
+#### Spark for Distributed Processing: 
+PySpark was used for distributed data processing with memory optimization and parallelism.
+#### Dask for Larger-than-Memory Handling: 
+Dask was used to handle data that couldn't fit into memory, dividing the dataset into partitions for parallel computation.
+#### DuckDB for Fast Querying: 
+DuckDB was used to load Parquet files into a fast in-memory SQL engine, enabling complex queries and analysis on the data.
 Steps Taken
 
 ## 1. Data Loading

@@ -67,7 +67,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/antrovibin/big-data-processing-without-cloud.git
 cd big-data-processing-without-cloud
-```bash
+```
 
 Ensure that you have the necessary data files in the /Dataset directory.
 
